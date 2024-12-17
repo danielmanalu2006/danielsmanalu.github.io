@@ -1,0 +1,143 @@
+/* Reset umum */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #252d72, #1d4aeb);
+    color: white;
+    text-align: center;
+    padding: 1rem 3rem;
+}
+
+.hero-content {
+    position: relative;
+}
+
+.hero .profile-photo {
+    width: 165px;
+    height: 200px;
+    border-radius:50%;
+    margin-top: 1rem;
+    border: 3px solid white;
+}
+
+/* Portfolio */
+.portfolio {
+    padding: 2rem;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.project {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 100px;
+    width: 500px;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Tentang Saya */
+.about {
+    padding: 2rem;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+/* Kontak */
+.contact-button {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    color: white;
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between icons */
+}
+
+.contact-icon {
+    width: 35px; /* Adjust icon size */
+    height: 35px; /* Adjust icon size */
+    transition: transform 0.3s; /* Animation on hover */
+}
+
+.contact-icon:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+img {
+    max-width: 200px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #2c3031;
+    color: white;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+}
